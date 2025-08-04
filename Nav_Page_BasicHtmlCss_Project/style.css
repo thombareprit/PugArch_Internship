@@ -1,0 +1,289 @@
+body {
+    font-family:  "Quicksand" , sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #fcf3c5;
+}
+
+.home-content {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.title {
+    font-size: 120px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    padding: 20px;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub-title {
+    color: #b18800;
+    font-size: 100px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 350;
+    padding: 20px;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.title:hover {
+    font-size: 140px;
+}
+
+.sub-title:hover {
+    font-size: 120px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    text-align: center;
+    text-align: center;
+    padding: 8px;
+}
+
+.sub-divider {
+    border: none;
+    height: 1.5px;
+    width: 300px;
+    margin: 40px auto;
+    border-radius: 50px;
+    background: #ffde34;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+    border: none;
+    height: 3px;
+    width: 600px;
+    margin: 40px auto;
+    border-radius: 50px;
+    background: #ffde34;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    max-width: 800px;
+    padding: 24px;
+    margin: 0;
+}
+
+#aboutus p {
+    text-align: centre;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.logo_right {
+    margin-right:auto;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    width: 80px;
+    height: 80px;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {   
+    cursor: pointer;   
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    gap: 30px;
+    width: 800px;
+    height: 30px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 30px ;
+    box-shadow: 2px 2px 8px #a4a4a4;
+    border-radius: 50px;
+    padding-right: 20px;
+    padding-left: 10px;
+    
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition:0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #dfba00;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.emoji_row {
+    text-align: center; 
+    margin: 40px; 
+    padding: 50px;
+}
+
+.emoji_row img{
+    height: 60px;
+    width: 60px; 
+    margin: 15px; 
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.emoji-row-images img:hover {
+    transform: scale(1.5) rotate(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.gallery-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px; 
+    margin: 60px auto; 
+    padding: 20px;
+}
+
+
+.gallery-card {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 30px;
+    text-align: center;
+    flex: 1 1 300px; 
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #ffdd34; 
+}
+
+
+.gallery-card img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+
+.gallery-card p {
+    font-family: 'Quicksand', sans-serif;
+    color: #5c4700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+#emofam {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+
+.profile-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 30px; 
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+.profile-card {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px;
+}
+
+
+.profile-card h3 {
+    font-family: 'Permanent Marker', cursive;
+    color: #5c4700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.profile-bio {
+    font-family: 'Quicksand', sans-serif;
+    color: #5c4700;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.favorite-emoji {
+    border-top: 1px solid #dfba00; 
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.favorite-emoji .favorite-title {
+    font-family: 'Quicksand', sans-serif;
+    color: #dfba00;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.fav-emoji-img {
+    height: 50px;
+    width: 50px;
+}
+
+.fav-quote {
+    font-family: 'Quicksand', sans-serif;
+    color: #5c4700;
+    font-style: italic;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.footer {
+    color: #5c4700; 
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    max-width: 800px;
+    padding: 24px;
+    margin: 40px auto;
+}
