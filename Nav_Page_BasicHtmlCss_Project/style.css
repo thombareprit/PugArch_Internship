@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family:  "Quicksand" , sans-serif;
     display: flex;
@@ -16,6 +20,7 @@ body {
 }
 
 .title {
+    cursor: pointer;
     font-size: 120px;
     font-family: 'Permanent Marker', cursive;
     font-weight: 400;
@@ -25,6 +30,7 @@ body {
 }
 
 .sub-title {
+    cursor: pointer;
     color: #b18800;
     font-size: 100px;
     font-family: 'Permanent Marker', cursive;
@@ -43,6 +49,7 @@ body {
 }
 
 h1, h2, h3, h4 {
+    cursor: pointer;
     margin: 0;
     text-align: center;
     text-align: center;
@@ -89,14 +96,14 @@ p {
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     transition: all 0.3s ease;
 }
 
 .logo:hover {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 
 .sticky-nav {
@@ -111,7 +118,7 @@ p {
     justify-content:flex-end;
     gap: 30px;
     width: 800px;
-    height: 30px;
+    height: 40px;
     background-color: #f4f4f4;
     padding: 10px;
     margin: 30px ;
@@ -126,17 +133,28 @@ p {
 .navbar a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
+    font-size: 20;
+    font-weight: 700;
     transition:0.3s ease-in-out;
+    padding: 5px 0;
+    display: inline-block;
 }
 
 .navbar a:hover {
     color: #dfba00;
-    font-size: 18px;
-    text-decoration: underline;
+    font-size: 24px;
+    text-decoration: none;
 }
+
+.navbar a.active {
+    color: #b18800;
+    font-weight: 800;
+    font-size: 24px;
+}
+
 .emoji_row {
-    text-align: center; 
+    display: flex;
+    flex-direction: column;
     margin: 40px; 
     padding: 50px;
 }
@@ -146,8 +164,6 @@ p {
     width: 60px; 
     margin: 15px; 
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-
 }
 
 .emoji-row-images img:hover {
@@ -225,6 +241,12 @@ p {
     padding: 30px;
     max-width: 500px;
     text-align: center;
+    transition: all 0.3s ease-in-out ;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px) scale(1.2)  rotate(4deg);
+    box-shadow: 0 8px 16px #ffdd34; 
 }
 
 
@@ -287,3 +309,31 @@ p {
     padding: 24px;
     margin: 40px auto;
 }
+
+.btn {
+    display: flex;
+    align-items: center;       
+    justify-content: center;    
+    padding: 30px;             
+    font-size: 48px;      
+    background-color: #ffde34;
+    color: #5c4700;
+    border: none;
+    border-radius: 15px;     
+    text-decoration: none;
+    font-weight: 800;        
+    height: 250px;             
+    width: 420px;        
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    line-height: 1.4;
+}
+
+
+.btn:hover {
+    background-color: #dfba00;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #ffdd34; 
+}
+
