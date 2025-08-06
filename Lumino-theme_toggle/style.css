@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'NeonSparkFont';
+    src: url('assets/font/NeonSpark.woff2') format('woff2'),
+         url('assets/font/NeonSpark.woff') format('woff'),
+         url('assets/font/NeonSpark.otf') format('opentype');
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeef9;
+    color: #222;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.title{
+    font-family: 'NeonSparkFont', sans-serif;
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow:
+        0 0 7px #FFA500,   
+        0 0 15px #FFD700,  
+        0 0 30px #FF4500,  
+        0 0 50px #FFD700;  
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #f5f5f5;
+    text-shadow:
+        0 0 7px #00FFFF,  
+        0 0 15px #00BFFF,  
+        0 0 30px #0080FF, 
+        0 0 50px #00BFFF;
+}
+
+.switch {
+    position: relative;
+    display:flex;
+    width: 130px; 
+    height: 50px; 
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e0e1f2;
+    transition: 0.4s;
+    border-radius: 50px; 
+    box-shadow: inset 0 0 2px #D1D4DE, 
+                inset 0 0 2px #D1D4DE;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 40px; 
+    width: 40px;
+    left: 6px;
+    bottom: 5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 2px #D1D4DE;
+}
+
+input:checked + .slider {
+    background-color: #0b1e30;
+}
+
+input:checked + .slider::before {
+    transform: translateX(78px);
+}
