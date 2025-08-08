@@ -29,6 +29,12 @@ body {
         0 0 50px #FFD700;  
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body.dark-theme {
     background-color: #121212;
     color: #f5f5f5;
@@ -93,8 +99,8 @@ footer {
 
 img {
     height: auto;
-    width: 600px;
-    padding: 30px;
+    width: 150px;
+    padding: 10px;
 }
 
 input:focus {
